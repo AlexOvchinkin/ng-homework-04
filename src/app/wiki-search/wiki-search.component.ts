@@ -21,7 +21,7 @@ export class WikiSearchComponent extends SearchComponent implements OnInit {
     }
 
     search(value: string) {
-        this.wikiSearch.search.next(value);
+        this.wikiSearch.search(value);
     }
 
     ngOnInit() {
