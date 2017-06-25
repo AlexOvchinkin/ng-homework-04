@@ -1,0 +1,5 @@
+<input #searchInput
+       (keyup.enter)="search(searchInput.value)"
+       (keyup)="enterStream.next(searchInput.value)">
+
+<app-result [searchResult]="searchResult"></app-result>
